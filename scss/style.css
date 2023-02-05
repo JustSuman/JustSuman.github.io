@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato";
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+}
+.navbar #logo {
+  padding: 0 6rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .navbar #logo {
+    font-size: 2.5rem;
+    padding: 0 4rem;
+  }
+}
+.navbar i {
+  display: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+  .navbar i {
+    display: block;
+    padding-right: 0.6rem;
+  }
+}
+.navbar #links a {
+  color: #325bb5;
+  padding: 0 2em;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.navbar #links a:hover {
+  opacity: 0.6;
+}
+@media screen and (max-width: 1000px) {
+  .navbar #links a {
+    display: none;
+  }
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+#home .sub_home {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 6rem;
+}
+@media screen and (max-width: 600px) {
+  #home .sub_home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding-left: 0;
+  }
+}
+#home .sub_home h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  #home .sub_home h1 {
+    font-size: 1.8rem;
+  }
+}
+#home .sub_home h2 {
+  font-size: 1.5rem;
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+}
+#home .sub_home p {
+  margin: 0.6rem 0;
+}
+#home .sub_home button {
+  cursor: pointer;
+  background: #C5D7FF;
+  margin: 1.2rem 0;
+  padding: 0.8rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+}
+#home .sub_home button a {
+  text-decoration: none;
+}
+#home .sub_home button:hover {
+  opacity: 0.8;
+}
+#home .illustration_home {
+  width: 50vw;
+}
+@media screen and (max-width: 600px) {
+  #home .illustration_home {
+    display: none;
+  }
+}
+
+hr {
+  width: 80%;
+  margin: auto;
+  color: #C5D7FF;
+}
+
+#edu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  #edu {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+}
+#edu .education_illustration {
+  width: 40%;
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
+  #edu .education_illustration {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  #edu .education_illustration {
+    display: none;
+  }
+}
+#edu .education_illustration svg {
+  position: absolute;
+  top: -150px;
+}
+#edu .details_education {
+  width: 60%;
+  text-align: center;
+  padding: 0 8rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  #edu .details_education {
+    overflow: hidden;
+  }
+}
+#edu .details_education h1 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  #edu .details_education h1 {
+    font-size: 2rem;
+  }
+}
+#edu .details_education .sub_detail h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  #edu .details_education .sub_detail h1 {
+    font-size: 1.5rem;
+  }
+}
+#edu .details_education .sub_detail h3 {
+  margin: 0;
+}
+#edu .details_education .sub_detail h2 {
+  margin: 0;
+}
+#edu .details_education .sub_detail .institution {
+  margin: 0.4rem;
+  border-radius: 20px;
+  background: rgba(197, 215, 255, 0.4784313725);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6em;
+}
+@media screen and (max-width: 600px) {
+  #edu .details_education .sub_detail .institution {
+    font-size: 0.6rem;
+    padding: 1em;
+  }
+}
+#edu .details_education .sub_detail .institution:hover {
+  box-shadow: 10px 5px 5px #C5D7FF;
+}
+#edu .details_education .sub_detail .institution .year {
+  width: 15%;
+  display: inline-block;
+  border-radius: 20px;
+  background: rgba(148, 178, 243, 0.6666666667);
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(https://images.unsplash.com/photo-1602478562449-abf35dbea243?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80) no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 1000px) {
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    overflow: hidden;
+  }
+}
+#about .about_detail {
+  border: none;
+  border-radius: 30px;
+  padding: 5.5rem;
+  width: 30%;
+  background: rgba(148, 178, 243, 0.6666666667);
+}
+@media screen and (max-width: 1000px) {
+  #about .about_detail {
+    width: 80%;
+    padding: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #about .about_detail {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+    padding: 5px;
+  }
+}
+#about .about_detail svg {
+  height: 30px;
+  width: 30px;
+}
+#about .about_detail h1 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  #about .about_detail h1 {
+    font-size: 2rem;
+  }
+}
+#about .about_detail h3 {
+  text-align: right;
+}
+#about .about_detail p {
+  font-size: 1.2rem;
+}
+#about .about_detail ul {
+  text-align: right;
+  list-style: none;
+  font-size: 1.2rem;
+  color: #325bb5;
+}
+@media screen and (max-width: 1000px) {
+  #about .about_detail ul {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  #about .about_detail ul {
+    text-align: center;
+  }
+}
+#about .about_detail ul a {
+  color: #325bb5;
+  text-decoration: none;
+}
+#about .about_detail ul a:hover {
+  border-bottom: 1px solid #000;
+  opacity: 0.6;
+}
+
+#ref {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */
